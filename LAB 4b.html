@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <p style = "font-size:14px; text-align:right;">
+    <b> Name: </b>Bhuvana Kruthi Dasari<br>
+    <b>Regd No: </b>24B01A4215
+    </p>
+<title>Combinator Selector Example</title>
+<style>
+ div p {
+color: red;
+}
+div > span {
+color: blue;
+font-weight: bold;
+}
+ h2 + p {
+background-color: lightgreen;
+} h2 ~ p {
+border: 1px dashed black; padding: 5px;
+}
+</style>
+</head>
+<body>
+<h1>Combinator Selectors Demo</h1>
+<div>
+<p>This paragraph is selected using descendant selector (div p).</p>
+<span>This span is selected using child selector (div > span).</span>
+</div>
+<h2>Adjacent & General Sibling Example</h2>
+<p>This paragraph is adjacent sibling of h2.</p>
+<p>This paragraph is general sibling of h2.</p>
+<p>This paragraph is also general sibling of h2.</p>
+</body>
+</html>

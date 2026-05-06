@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <p style = "font-size:14px; text-align:right;">
+    <b> Name: </b>Bhuvana Kruthi Dasari<br>
+    <b>Regd No: </b>24B01A4215
+    </p>
+<title> Loops Experiment</title>
+<script>
+function displayData()
+{ let person ={ Name:"Srileela", Age:25,
+City:"Hyderabad"
+};
+let result ="<strong>USing for-in loop</strong><br>"; for(let key in person){
+result +=key+":"+person[key]+"<br>";
+}
+let arr=[10,20,30];
+result +="<br><strong>Usingg forEach loop:</strong><br>"; arr.forEach((value,index)=>{
+result +="Index"+index+":"+value+"<br>";
+});
+result +="<br><strong>Using for-of-loop:</strong><br>"; for (let value of arr){
+result +=value +" ";
+}
+document.getElementById("dataDisplay").innerHTML=result;
+}
+</script>
+</head>
+<body>
+<h1>Diaplay Data Using Loops</h1>
+<button onclick="displayData()">Display Data</button>
+<p id="dataDisplay"></p>
+</body>
+</html>

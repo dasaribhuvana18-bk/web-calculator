@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Catalog</title>
+  <style>
+    body { font-family: Arial; }
+    .card { border:1px solid #ccc; padding:10px; margin:10px; width:150px; display:inline-block; }
+  </style>
+</head>
+<body>
+<h3>Product Catalog</h3>
+<input id="search" placeholder="Search..." onkeyup="filterProducts()">
+<select id="category" onchange="filterProducts()">
+  <option value="">All</option>
+  <option value="Electronics">Electronics</option>
+  <option value="Clothing">Clothing</option>
+</select>
+<select id="sort" onchange="filterProducts()">
+  <option value="">Sort</option>
+  <option value="low">Price ↑</option>
+  <option value="high">Price ↓</option>
+</select>
+<div id="products"></div>
+<script>
+const data = [
+  {name:"Phone", category:"Electronics", price:10000},
+  {name:"Laptop", category:"Electronics", price:50000},
+  {name:"Shirt", category:"Clothing", price:1000},
+  {name:"Jeans", category:"Clothing", price:2000}
+];
+function display(items) {
+  let div = document.getElementById("products");
+  div.innerHTML = "";
+  items.forEach(p => {
+    div.innerHTML += `<div class="card">
+      <h4>${p.name}</h4>
+      <p>${p.category}</p>
+      <p>₹${p.price}</p>
+    </div>`;
+  });
+}
+function filterProducts() {
+  let search = document.getElementById("search").value.toLowerCase();
+  let cat = document.getElementById("category").value;
+  let sort = document.getElementById("sort").value;
+  let items = data.filter(p =>
+    p.name.toLowerCase().includes(search) &&
+    (cat === "" || p.category === cat)
+  );
+  if (sort === "low") items.sort((a,b)=>a.price-b.price);
+  if (sort === "high") items.sort((a,b)=>b.price-a.price);
+  display(items);
+}
+display(data);
+</script>
+</body>
+</html>

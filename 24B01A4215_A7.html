@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FSD Assignment-6: Tour Guide</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+.header {
+    text-align: right;
+    font-size: 14px;
+}
+h1 {
+    color: darkblue;
+}
+h2 {
+    color: darkgreen;
+}
+p {
+    font-size: 16px;
+}
+ul {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+table {
+    border-collapse: collapse;
+    width: 60%;
+    background-color: white;
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+img {
+    border-radius: 10px;
+    margin: 10px;
+}
+button {
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+</style>
+<script>
+function showMessage(place) {
+    alert("Welcome to " + place + "!");
+}
+function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+</head>
+<body>
+<p class="header">
+<b>Name:</b> Rani Sumansvi<br>
+<b>Reg No:</b> 24B01A579
+</p>
+<hr>
+<button onclick="toggleTheme()">Toggle Theme</button>
+<h1>Rajahmundry - The Cultural Hub of Andhra Pradesh</h1>
+<p><b>Location:</b> Rajahmundry, Andhra Pradesh, India</p>
+<p><b>Description:</b> Rajahmundry is located on the banks of the Godavari River. It is known for culture, temples, and history.</p>
+<h2>Major Attractions</h2>
+<ul>
+<li onclick="showMessage('Godavari Bridge')">Godavari Bridge</li>
+<li>Papi Hills</li>
+<li>Dowleswaram Barrage</li>
+<li>ISKCON Temple</li>
+<li>Kadiyam Gardens</li>
+</ul>
+<h2>Food & Festivals</h2>
+<ul>
+<li>Pootharekulu</li>
+<li>Andhra Biryani</li>
+<li>Gongura Pachadi</li>
+</ul>
+<h2>Images</h2>
+<img src="godavari_bridge.jpg" width="300">
+<img src="papi_hills.jpg" width="300">
+<img src="dowleswaram_barrage.jpg" width="300">
+<h2>Quick Facts</h2>
+<table>
+<tr>
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+<tr>
+<td>State</td>
+<td>Andhra Pradesh</td>
+</tr>
+<tr>
+<td>Language</td>
+<td>Telugu</td>
+</tr>
+<tr>
+<td>Population</td>
+<td>~3 Lakh</td>
+</tr>
+</table>
+<hr>
+<h1>Switzerland - The Land of Alps</h1>
+<p><b>Location:</b> Switzerland, Europe</p>
+<p><b>Description:</b> Switzerland is known for mountains, lakes, chocolates, and tourism.</p>
+<h2>Major Attractions</h2>
+<ul>
+<li onclick="showMessage('Matterhorn')">Matterhorn</li>
+<li>Lake Geneva</li>
+<li>Chillon Castle</li>
+<li>Interlaken</li>
+<li>Zurich</li>
+</ul>
+<h2>Food & Culture</h2>
+<ul>
+<li>Swiss Chocolate</li>
+<li>Fondue</li>
+<li>Swiss Watches</li>
+</ul>
+<h2>Images</h2>
+<img src="matterhorn.jpg" width="300">
+<img src="lake_geneva.jpg" width="300">
+<img src="chillon_castle.jpg" width="300">
+<h2>Quick Facts</h2>
+<table>
+<tr>
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+<tr>
+<td>Country</td>
+<td>Switzerland</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>German, French, Italian</td>
+</tr>
+<tr>
+<td>Population</td>
+<td>~8.5 Million</td>
+</tr>
+</table>
+</body>
+</html>

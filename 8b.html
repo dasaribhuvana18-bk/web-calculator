@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <p style = "font-size:14px; text-align:right;">
+    <b> Name: </b>Bhuvana Kruthi Dasari<br>
+    <b>Regd No: </b>24B01A4215
+    </p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Weekdays Switch Case</title>
+<script>
+function showWeekDay(){
+let day=parseInt(prompt("Enter a number(1-7):")); let dayName;
+switch(day){
+case 1: dayName="Sunday";break;
+case 2: dayName="Monday";break;
+case 3: dayName="Tuesday";break;
+case 4: dayName="Wednesday";break;
+case 5: dayName="Thursday";break;
+case 6: dayName="Friday";break;
+case 7: dayName="Saturday";break; default: dayName="Invalid day!";
+}
+document.getElementById("dayDisplay").innerHTML="Day:"+dayName;
+}
+</script>
+</head>
+<body>
+<h1>Display Weekdays Using Switch</h1>
+<button onclick="showWeekDay()">show Weekday</button>
+<p id="dayDisplay"></p>
+</body>
+</html>

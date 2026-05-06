@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<p style = "font-size:14px; text-align:right;">
+    <b> Name: </b>Bhuvana Kruthi Dasari<br>
+    <b>Regd No: </b>24B01A4215
+    </p>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regex Object Example</title>
+<script>
+function validateEmail(){
+var email=document.getElementById("email").value;
+var regex=/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/; if(regex.test(email)){
+alert("Give Email is Valid");
+}else{
+alert("Give Email is invalid");
+}
+}

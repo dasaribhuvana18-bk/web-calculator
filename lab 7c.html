@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <p style = "font-size:14px; text-align:right;">
+    <b> Name: </b>Bhuvana Kruthi Dasari<br>
+    <b>Regd No: </b>24B01A4215
+    </p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhuvana's Array Object Example</title>
+<script>
+var fruits=["Apple","Banana","Cherry"]; document.getElementById("arrayDemo").innerHTML="Array elements:"+fruits.join(","); function ArrayPush(){ fruits.push("Orange");
+document.getElementById("arrayDemo").innerHTML="Array elements:"+fruits.join(",");
+}
+function ArrayPop()
+{ fruits.pop();
+document.getElementById("arrayDemo").innerHTML="Array elements:"+fruits.join(",");
+}
+</script>
+</head>
+<body>
+<h1>JavaScript Array Object Example</h1>
+<button onclick="ArrayPush()">Push Orange in to Array</button>
+<button onclick="ArrayPop()">pop from Array</button>
+<p id="arrayDemo"></p>
+</body>
+</html>
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <p style = "font-size:14px; text-align:right;">
+    <b> Name: </b>Bhuvana Kruthi Dasari<br>
+    <b>Regd No: </b>24B01A4215
+    </p>
+<title>Attribute Selector Example</title>
+<style>
+ input[placeholder] {
+background-color: lightyellow;
+}
+input[type="text"] {
+border: 2px solid blue;
+}
+ a[href^="https"] {
+color: green;
+}
+ a[href$=".com"] {
+font-weight: bold;
+}
+ a[href*="google"] {
+background-color: lightgray;
+}
+</style>
+</head>
+<body>
+<h1>Attribute Selector Demo</h1>
+<input type="text" placeholder="Enter name">
+<br><br>
+<input type="password" placeholder="Enter password">
+<br><br>
+<a href="https://google.com">Google</a><br>
+<a href="http://example.org">Example</a><br>
+<a href="https://openai.com">OpenAI</a>
+</body>
+</html>
